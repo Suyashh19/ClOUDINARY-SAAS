@@ -60,11 +60,8 @@ function Home() {
           {videos.map((video) => (
             <VideoCard
               key={video.id}
-              video={{
-                ...video,
-                originalSize: String(video.originalSize),
-                compressedSize: String(video.compressedSize),
-              }}
+              video={video}
+
               onDownload={handleDownload}
             />
           ))}

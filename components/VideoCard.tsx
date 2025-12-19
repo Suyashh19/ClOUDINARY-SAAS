@@ -4,7 +4,8 @@ import { Download, Clock, FileDown, FileUp } from "lucide-react";
 import dayjs from "dayjs";
 import realtiveTime from "dayjs/plugin/relativeTime";
 import { filesize } from "filesize";
-import { Video } from "@prisma/client";
+import type { Video } from "@/types";
+
 
 dayjs.extend(realtiveTime);
 
